@@ -1,1 +1,21 @@
-<h1>Testing score path and html</h1>
+<%= link_to "Restart", new_path %>
+
+<!DOCTYPE html>
+</html>
+  <head>
+    <h1>Score 🚀</h1>
+  </head>
+  <body>
+
+    <% if @included %>
+      <% if @english_word %>
+        <p><strong>Well done you! </strong><%= @attempt %> is an English word.</p>
+      <% else %>
+          <p>Hmmm... it doesn't seem that <strong><%= @attempt %> </strong> is a valid English word.</p>
+      <% end %>
+      <% else %>
+        <p>Nope! <strong><%= @attempt %></strong> can't be built out of <%= @letters.join(", ") %></p>
+      <% end %>
+  </body>
+</html>
+
