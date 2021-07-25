@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simplified version of the game ![Countdown!](https://www.youtube.com/watch?v=GvV8aVEJmiU) using Rails.
 
-Things you may want to cover:
+* Ruby version:
+ruby 2.6
 
-* Ruby version
+* System dependencies:
+rails 6.0 (flagged --skip-active-storage to pass on cloud storage services)
 
-* System dependencies
+* Configuration:
+```bash
+bundle install
+```
 
-* Configuration
+* Deployment instructions:
 
-* Database creation
+From parent directory, launch the server to see the Rails' welcome page.
+```bash
+rails s
+```
+You are given a random set of letters.
+* You have to enter the longest english word you can find using only letters in the grid.
+* After typing your answer, you get your score combined with the time you took, and eventually an error message if you failed.
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
